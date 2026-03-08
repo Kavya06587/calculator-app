@@ -3,12 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/Kavya06587/calculator-app.git'
-            }
-        }
-
         stage('Build') {
             steps {
                 sh 'mvn clean compile'
